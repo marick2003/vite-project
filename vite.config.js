@@ -10,6 +10,13 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  css: {
+    loaderOptions: {
+      sass: {
+        prependData: `@import "@/styles/_variables.scss";`
+      }
+    }
+  },
   server: {
       host: '0.0.0.0'
   }
