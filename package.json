@@ -1,0 +1,22 @@
+{
+  "name": "vite-project",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.19.3",
+    "es6-promise": "^4.2.8",
+    "vue": "^3.2.16",
+    "vue-print-nb": "^1.7.5",
+    "vue-router": "^4.0.12",
+    "vue3-print-nb": "^0.1.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.9.3",
+    "vite": "^2.6.4"
+  }
+}
