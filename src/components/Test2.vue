@@ -6,22 +6,27 @@
             <button @click="currentTab = 'first-form'">First form</button>
             <button @click="currentTab = 'second-form'">Second form</button>
             <keep-alive>
-                <AsyncComponent></AsyncComponent>
+                <component :is="currentTab"></component>
             </keep-alive>
     </div>
     
 </template>
 <script>
-import AsyncComponent from '@/component/MyComponent'
+import AsyncComponent from './MyComponent.vue'
+import FirstForm from './FirstForm.vue'
+import SecondForm from "./SecondForm.vue"
     export default {
         components: {
             AsyncComponent,
+            FirstForm,
+            SecondForm
         },
         data() {
             return {
-                currentTab: "first-form",
+               currentTab: "first-form",
                numbers:{
                 one: 1,
+                www: 123
 
                 },
                 clientType:{

@@ -1,4 +1,4 @@
-<template lang="">
+<template>
     <div>
        My component 
     </div>
