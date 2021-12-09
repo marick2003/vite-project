@@ -1,6 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 import HelloWorld from "@/components/HelloWorld.vue";
 import Test2 from "@/components/Test2.vue"
+import Test from "@/components/Test.vue"
 const routes = [
   {
     path: "/",
@@ -10,7 +11,7 @@ const routes = [
   {
     path: "/test",
     name: "Test",
-    component: HelloWorld,
+    component: Test,
   },
   {
     path:"/test2",

@@ -7,13 +7,17 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "babel-polyfill": "^6.26.0",
     "core-js": "^3.19.3",
+    "cors": "^2.8.5",
     "es6-promise": "^4.2.8",
     "node-sass": "^6.0.1",
     "sass": "^1.44.0",
     "sass-loader": "^12.3.0",
+    "sha1": "^1.1.1",
     "vue": "^3.2.16",
+    "vue-axios": "^3.4.0",
     "vue-print-nb": "^1.7.5",
     "vue-router": "^4.0.12",
     "vue3-print-nb": "^0.1.4"
