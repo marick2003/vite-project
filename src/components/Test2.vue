@@ -9,27 +9,26 @@
                 <component :is="currentTab"></component>
             </keep-alive>
             <button @click="doPrint">打印測試</button>
-            <button @click="">ASYNC TEST</button>
-            <asyncComponent></asyncComponent>
+            <button @click="">async TEST</button>
     </div>
     
 </template>
 <script>
-import {createApp , defineAsyncComponent } from 'vue'
-//import FirstForm from './FirstForm.vue'
-//import SecondForm from "./SecondForm.vue"
+import AsyncComponent from './MyComponent.vue'
+import FirstForm from './FirstForm.vue'
+import SecondForm from "./SecondForm.vue"
 import sha1 from "sha1"
-  
-   const app = createApp({})
+const asyncPage = {
+    component: AsyncComponent,
+    delay:200,
+    timeout:3000
+}
 
     export default {
         components: {
-            FirstForm:defineAsyncComponent(()=>import('./FirstForm.vue')),
-            SecondForm:defineAsyncComponent(()=>import('./SecondForm.vue')),
-            asyncComponent:defineAsyncComponent(() =>
-            import('./MyComponent.vue')
-            )
-       
+            AsyncComponent,
+            FirstForm,
+            SecondForm
         },
         data() {
             return {
@@ -125,13 +124,7 @@ import sha1 from "sha1"
                     }
                 }).then( (response) => console.log(response))
                 */
-             },
-             asyncFunc(){
-
-
              }
-        
-        
         },
 
     }

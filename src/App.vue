@@ -5,7 +5,7 @@
         <div class="" >
             <router-view></router-view>
         </div>
-    <div>
+            <div>
         <div class="betList">
         <table class="t-1" id="printMe">
           <thead>
@@ -162,7 +162,7 @@ body{
 }
 .main{
 
-    position: inherit;
+    position: absolute;
     width: 100%;
     left: 0;
     right: 0;
@@ -201,7 +201,6 @@ iframe{
 .betList {
   width:100%;
   max-width:300px;
- 
   table {
     height: calc(100% - 212px);
     tbody {
