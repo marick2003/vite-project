@@ -5,6 +5,9 @@
         <div class="" >
             <router-view></router-view>
         </div>
+          <h1 class="text-3xl font-bold underline">
+        Hello world!
+      </h1>
             <div>
         <div class="betList">
         <table class="t-1" id="printMe">
