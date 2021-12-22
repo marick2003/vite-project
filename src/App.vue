@@ -204,14 +204,11 @@ iframe{
   table {
     height: calc(100% - 212px);
     tbody {
-      display: inline;
       width: 100%;
-      position: absolute;
       max-height: calc(100% - 405px);
       overflow-y: scroll;
       tr {
-        width: calc(100% - 41%);
-        display: inline-table;
+
       }
     }
   }
