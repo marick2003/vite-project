@@ -11,5 +11,18 @@
     </div>
   </div>
 </template>
-<script></script>
+<script>
+
+export default{
+  data() {
+    return {
+      
+    }
+  },
+  mounted() {
+    
+  },
+
+}
+</script>
 <style scoped></style>
