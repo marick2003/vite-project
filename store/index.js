@@ -4,7 +4,8 @@ const store = createStore({
   state: {
         pageType:'',
         firstName: 'John',
-        lastName: 'Doe'
+        lastName: 'Doe',
+        count: 0
   },
   getters: {
         fullname:function(){
@@ -13,7 +14,9 @@ const store = createStore({
         }
   },
   mutations: {
-
+      increment (state) {
+            state.count++
+      }
   },
   actions: {
 

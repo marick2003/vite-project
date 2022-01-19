@@ -17,6 +17,7 @@
     "node-sass": "^6.0.1",
     "postcss-import": "^14.0.2",
     "postcss-nesting": "^10.0.3",
+    "rn-bluetooth-printer": "^1.0.1",
     "sass": "^1.44.0",
     "sass-loader": "^12.3.0",
     "sha1": "^1.1.1",

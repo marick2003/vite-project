@@ -1,0 +1,240 @@
+<html>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <body>
+    <div class="betList">
+      <table class="t-1" id="printMe">
+        <thead>
+          <tr>
+            <td colspan="3">
+              <div class="title">排列五</div>
+              <div class="info f12">
+                时间：2021-12-06 10:56:08<br />
+                会员：rickmb101<br />
+                编号：<span>2056078853002449</span>
+              </div>
+            </td>
+          </tr>
+          <tr class="tc bg1">
+            <td>号码</td>
+            <td>赔率</td>
+            <td>金额</td>
+          </tr>
+        </thead>
+        <tbody class="">
+          <tr class="tc">
+            <td>1X2X</td>
+            <td class="red">1:97.9</td>
+            <td>10</td>
+          </tr>
+          <tr class="tc">
+            <td>1X2X</td>
+            <td class="red">1:97.9</td>
+            <td>10</td>
+          </tr>
+          <tr class="tc">
+            <td>1X2X</td>
+            <td class="red">1:97.9</td>
+            <td>10</td>
+          </tr>
+          <tr class="tc">
+            <td>1X2X</td>
+            <td class="red">1:97.9</td>
+            <td>10</td>
+          </tr>
+          <!--v-if-->
+        </tbody>
+        <tfoot>
+          <tr class="tc">
+            <td colspan="3" class="fb tfoot">
+              <span>笔数：1</span><span>总金额：10</span>
+            </td>
+          </tr>
+          <tr class="tc">
+            <td colspan="3" class="fb tfoot"></td>
+          </tr>
+          <tr class="tc no-print">
+            <td colspan="3" class="fb tfoot">
+                <input type="button" class="btn fn-print" value="打印" onclick="window.print()"/>
+            </td>
+          </tr>
+          <tr class="tc no-print"></tr>
+          <tr class="tc no-print"></tr>
+          <tr class="tc no-print"></tr>
+          <tr class="tc no-print"></tr>
+          <tr class="tc no-print"></tr>
+          <tr class="tc no-print"></tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
+<style>
+    html{
+    height: 100%;
+    width: 375px;
+    overflow-y: hidden;
+    
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 48px;
+    font-family: Arial,sans-serif;
+    height: 100%;
+    overflow-y: hidden;
+    width: 100%;
+    position: relative;
+}
+.main{
+
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 99px;
+    bottom: 30px;
+
+}
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 28px;
+    background: #F7F7F7;
+    border-top: 1px solid #CECFCE;
+    border-bottom: 1px solid #B5C7E7;
+    line-height: 28px;
+}
+#app {
+
+}
+iframe{
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+
+
+.bd {
+  height: 100%;
+
+}
+.bd.row {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+.betList {
+  width:100%;
+  height: 350px;
+  max-width:325px;
+  margin-bottom: 50px;
+    
+}
+table {
+    height: calc(100% - 212px);
+    
+  }
+    tbody {
+      width: 100%;
+      overflow-y: scroll;
+     
+    }
+  .data_table_height {
+    height: 100%;
+
+  }
+  .title {
+    color: #104b73;
+    font-weight: bold;
+    padding: 2px 0;
+  }
+
+  .t-1 {
+    border: 2px solid #000;
+  }
+@media print {
+  .no-print {
+    visibility: hidden;
+  }
+  body,table{
+    font-size: 24px;
+}
+
+}
+
+
+.t-1 {
+  border-collapse: collapse;
+  width: 100%;
+  background: #fff;
+}
+
+.t-1 tr.cancel {
+  background-color: #dedede !important;
+  text-decoration: line-through;
+}
+
+.t-1 tr.detail {
+  cursor: pointer;
+}
+
+.t-1 tr .isprint {
+  font-size: 14px;
+  vertical-align: middle;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.t-1 td, .t-1 th {
+  border: 2px solid #000;
+  height: 22px;
+  padding: 4px;
+}
+
+.t-1 td.bg-gray, .t-1 th.bg-gray {
+  background: #e0e0e0;
+}
+
+.t-1 th {
+  font-weight: bold;
+  color: #35406d;
+}
+
+.t-1 .name {
+  background: #dcf0fc;
+}
+
+.t-1 .bg1 td, .t-1 .bg1 th {
+  background: #f3f2f7;
+  color: #757575;
+}
+
+.t-1 .bg1 a:not(.red) {
+  color: #757575;
+}
+
+.t-1 .bg2 td, .t-1 .bg2 th {
+  background: #dcf0fd;
+}
+
+.t-1 .bg-gray td, .t-1 .bg-gray th {
+  background: #e0e0e0;
+}
+
+.t-1 tfoot td {
+  background: #e6e6fa;
+}
+
+.t-1 .hover tr:hover td, .t-1 .hover tr:hover th {
+  background-color: #FFC114;
+}
+@page {
+    margin: 0;
+    
+    
+}
+
+</style>

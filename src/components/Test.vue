@@ -12,14 +12,20 @@
   </div>
 </template>
 <script>
-
+let obj = await import('../script/say.js');
+console.log(obj.hi());
 export default{
+
   data() {
     return {
       
     }
   },
   mounted() {
+    
+
+  },
+  created() {
     
   },
 
