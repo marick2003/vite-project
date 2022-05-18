@@ -1,11 +1,14 @@
 
-
 <template>
     <div class="main">
         <div class="" >
             <router-view></router-view>
         </div>
-            <div>
+      <div>
+       <div class="betList">
+       ~!~!@!~@~!@~!@!~@~!@~@~@~!
+       </div>
+
         <div class="betList">
         <table class="t-1" id="printMe">
           <thead>
@@ -76,6 +79,13 @@
                   v-print="printObj"
                   
                 />
+                <input
+                  type="button"
+                  value="打印2"
+                  class="btn fn-print"
+                  @click="bluetoothPrint"
+                  
+                />
               </td>
             </tr>
           </tfoot>
@@ -140,7 +150,14 @@ export default {
     },
     directives: {
     print   
-    }
+    },
+    methods: {
+      bluetoothPrint:function(){
+          var a = "wellcome to sunmi"; javascript:lee.funAndroid(a);
+          return false;
+
+      }
+    },
   
 }
 </script>
@@ -180,9 +197,7 @@ body{
     border-bottom: 1px solid #B5C7E7;
     line-height: 28px;
 }
-#app {
 
-}
 iframe{
     height: 100%;
     width: 100%;
